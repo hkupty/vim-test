@@ -20,7 +20,7 @@ call s:extend(g:test#runners, {
   \ 'Erlang':     ['CommonTest'],
   \ 'Go':         ['GoTest', 'Ginkgo'],
   \ 'Rust':       ['CargoTest'],
-  \ 'Clojure':    ['FireplaceTest', 'AcidTest'],
+  \ 'Clojure':    ['AcidTest', 'FireplaceTest'],
   \ 'CSharp':     ['DotnetTest'],
   \ 'Shell':      ['Bats'],
   \ 'VimL':       ['VSpec', 'Vader'],
