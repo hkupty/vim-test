@@ -7,8 +7,6 @@ function! test#clojure#acidtest#test_file(file) abort
 endfunction
 
 function! test#clojure#acidtest#build_position(type, position) abort
-  call s:require_acid()
-
   if a:type == 'nearest'
     if expand('%:.') == a:position['file']
       return [':.RunTests']
@@ -32,10 +30,3 @@ endfunction
 
 function! test#clojure#acidtest#executable() abort
 endfunction
-
-function! s:require_acid() abort
-  if !exists('g:loaded_acid')
-    throw "Test.vim requires Acid.nvim to run Clojure tests"
-  endif
-endfunction
-

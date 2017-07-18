@@ -35,6 +35,6 @@ endfunction
 
 function! s:require_fireplace() abort
   if !exists('g:loaded_fireplace')
-    throw "Test.vim requires Fireplace.vim to run Clojure tests"
+    echoerr "Test.vim requires Fireplace.vim to run Clojure tests"
   endif
 endfunction
